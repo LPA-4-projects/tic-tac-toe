@@ -5,14 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: FastAPI",
+            "name": "Game",
             "type": "python",
             "request": "launch",
-            "module": "uvicorn",
-            "args": [
-                "service.main:app",
-                "--reload"
-            ],
+            "module": "game.main",
             "jinja": true,
             "justMyCode": true,
             "console": "internalConsole"
