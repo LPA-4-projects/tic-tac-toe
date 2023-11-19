@@ -8,10 +8,10 @@
             "name": "Game",
             "type": "python",
             "request": "launch",
-            "module": "game.main",
+            "module": "tic_tac_toe.main",
             "jinja": true,
             "justMyCode": true,
-            "console": "internalConsole"
+            "console": "internalConsole",
         }
     ]
 }
