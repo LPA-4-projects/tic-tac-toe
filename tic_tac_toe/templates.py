@@ -2,9 +2,15 @@ GREETING_MESSAGE = """
 Hey!
 This is a 3x3 tic-tac-toe
 
-You play with {icon} and you start
-Write down a cell number like 0,0
+Type your name here:
+"""
+
+RULES_MESSAGE = """
+You play with {icon}
+Write down a cell coordinates like 0 0
 If you'd like to finish the game, type 'end'
+
+{player} will start
 """
 
 FIELD_TEMPLATE = """

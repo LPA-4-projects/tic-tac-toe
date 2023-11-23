@@ -21,10 +21,10 @@ class Counter:
             'd2': {(0, 2), (1, 1), (2, 0)},
         }
 
-    def has_fool_row(self) -> bool:
+    def has_full_row(self) -> bool:
         return True if 3 in self.win_combinations.values() else False
 
-    def increase(self, move: tuple) -> None:
+    def increase(self, move: tuple[int, int]) -> None:
         for k, v in self.combinations_map.items():
             if move in v:
                 self.win_combinations[k] += 1

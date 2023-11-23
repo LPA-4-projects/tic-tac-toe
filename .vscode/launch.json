@@ -11,7 +11,7 @@
             "module": "tic_tac_toe.main",
             "jinja": true,
             "justMyCode": true,
-            "console": "internalConsole",
+            "console": "integratedTerminal",
         }
     ]
 }
