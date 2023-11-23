@@ -13,6 +13,40 @@ python = "^3.11"
 ruff = "^0.1.6"
 mypy = "^1.7.0"
 
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+faker = "^20.1.0"
+pytest-cov = "^4.1.0"
+pytest-testdox = "^3.1.0"
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = """
+  --strict
+  --tb=short
+  --show-capture=log
+  --cov-report=term-missing:skip-covered
+  --cov-report=xml:coverage.xml
+  --cov-branch
+  --cov=functions
+  --testdox
+  --no-header
+  -x
+  """
+testpaths = [
+    "tests",
+]
+norecursedirs = [".git", "__pycache__"]
+testdox_format = "plaintext"
+filterwarnings = "ignore::DeprecationWarning"
+
+
+[tool.mypy]
+check_untyped_defs = true
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
